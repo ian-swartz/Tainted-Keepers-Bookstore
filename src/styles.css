@@ -1,0 +1,254 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #24272e; */
+  background: url("images/sheol.jpg") center/cover no-repeat;
+  /* background: url("images/basement.jpg") center/cover no-repeat; */
+  font-family: Asap, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------nav bar------*/
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff; /* Header is white */
+  z-index: 1;
+}
+.navbar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: white;
+}
+
+/*------Products Section------*/
+.products-center {
+  width: 90vw;
+  margin: 3rem auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 1.5rem;
+  flex-grow: 1;
+}
+
+.product {
+  background: url("images/note.jpg") center/cover no-repeat;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.product:hover {
+  transform: translateY(-3px);
+}
+
+/* Fade card if in cart */
+.product.in-cart {
+  filter: grayscale(60%) brightness(80%);
+}
+
+/* Product text */
+.product h3 {
+  font-size: 1rem;
+  margin: 0.3rem 0 0.1rem;
+  text-align: center;
+}
+
+.product h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #751414;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+/* Product image */
+.product-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+/* Add to cart button */
+.bag-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Show button on hover if not in cart */
+.product:not(.in-cart):hover .bag-btn {
+  opacity: 1;
+}
+
+/* Show button permanently if in cart */
+.product.in-cart .bag-btn {
+  opacity: 1;
+}
+
+/* Cart overlay */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(210, 180, 140, 0.7);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 3;
+  background: rgb(231, 226, 221);
+  padding: 1.5rem;
+  transform: translateX(101%);
+}
+
+.showCart {
+  transform: translateX(0);
+}
+
+.transparentBcg {
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.close-cart {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Cart Item */
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cart-item img {
+  width: 75px;
+  height: 75px;
+}
+.cart-item h4 {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+.cart-item h5 {
+  margin: 0.5rem 0;
+}
+.item-amount {
+  text-align: center;
+}
+.remove-item {
+  color: grey;
+  cursor: pointer;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  cursor: pointer;
+}
+
+/* Cart Footer */
+.cart-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+.cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: rgb(210, 180, 140);
+  color: black;
+  border: 1px solid rgb(210, 180, 140);
+  cursor: pointer;
+}
+
+/* Footer pinned at bottom */
+footer {
+  background: #fff;
+  color: black;
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+}
