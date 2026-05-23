@@ -1,6 +1,8 @@
 # Tainted Keepers Bookstore
 Single-page React app displaying an interactive list of items and books modeled after *The Binding of Isaac*. Users can browse items dynamically fetched from an asset inventory, manage a persistent shopping cart with interactive step counter modifications, and experience a themed UI interface.
 
+> Note: The README.md file that goes with the project is separetley titled README(project).txt which was included as part of the assignment, but also shows a way to run the project locally (instructions also included at the bottom of this README.md file), along with optional and required features added into the project.
+
 ## Live Demo
 
 Play the project here:  
@@ -102,6 +104,17 @@ The architecture utilizes an automated deployment ecosystem via a custom **GitHu
 1.  **Vite Assembly:** On push routines targeting the production branch, compilation sequences parse JSX syntax directly to render structural tree outputs mapped inside a root distribution matrix (`/dist`).
 2.  **Relative Pathing Optimization:** Explicit `base: './'` overrides are enforced across configuration levels to secure problem-free hosting inside GitHub subdirectories without root-path domain confusion.
 3.  **Automated Continuous Delivery:** Automated runtime engines trigger dynamic dependency verification setups (`npm install --no-audit`) before systematically writing verified build packages straight to the GitHub hosting servers.
+
+---
+
+## How to Run
+1. Open project in CodeSandbox (or clone locally).  
+2. Ensure `library_item_names.json` and images are in `/public`.  
+3. Start the app:  
+   ```bash
+   npm install
+   npm start
+4. Click "Add to Cart" buttons and toggle the cart using the cart icon.
 
 ---
 
