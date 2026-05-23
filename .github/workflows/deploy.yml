@@ -24,10 +24,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22 # Updated to Node 22 to clear deprecation warnings
 
+      # Added --no-audit and --no-fund flags to bypass strict local environment locks
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-audit --no-fund
 
       - name: Build React application
         run: npm run build
