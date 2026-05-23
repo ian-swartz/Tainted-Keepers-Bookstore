@@ -8,12 +8,15 @@ export default function App() {
   const [cart, setCart] = useState([]);
   const [cartVisible, setCartVisible] = useState(false);
 
-  // Load items from JSON
+  // Load items from JSON (Removed the absolute leading slash for GitHub Pages compatibility)
   useEffect(() => {
-    fetch("/library_item_names.json")
+    fetch("library_item_names.json")
       .then((res) => res.json())
-      .then((data) => setItems(data.items))
-      .catch((err) => console.error(err));
+      .then((data) => {
+        // Fallback checks to catch array-only or object-wrapped data structures
+        setItems(data.items || data || []);
+      })
+      .catch((err) => console.error("Error fetching library data:", err));
   }, []);
 
   // Load cart from localStorage
