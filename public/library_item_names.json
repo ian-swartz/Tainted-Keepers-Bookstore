@@ -1,0 +1,289 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "The Bible",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book1.jpg" } }
+        },
+        "meta": {
+          "game_id": 33,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 4,
+          "quality": 1,
+          "item_pools": ["Library", "Angel Room", "Shop"],
+          "description": "Grants flight for the current room; can instantly kill Mom / Mom's Heart when used; kills Isaac when used on Satan."
+        }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "The Book of Belial",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book2.jpg" } }
+        },
+        "meta": {
+          "game_id": 34,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 3,
+          "quality": 2,
+          "item_pools": ["Library", "Devil Room"],
+          "description": "Gives +2 damage for the current room; increases chance of Devil / Angel rooms."
+        }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "The Necronomicon",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book3.jpg" } }
+        },
+        "meta": {
+          "game_id": 35,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 4,
+          "quality": 1,
+          "item_pools": ["Library", "Devil Room", "Secret Room"],
+          "description": "Deals 40 damage to all enemies in the room."
+        }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Book of Shadows",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book4.jpg" } }
+        },
+        "meta": {
+          "game_id": 58,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 3,
+          "quality": 3,
+          "item_pools": ["Library", "Treasure Room"],
+          "description": "Grants invulnerability for 10 seconds."
+        }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Anarchist Cookbook",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book5.jpg" } }
+        },
+        "meta": {
+          "game_id": 65,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 3,
+          "quality": 1,
+          "item_pools": ["Library", "Treasure Room"],
+          "description": "Spawns six troll bombs, usually near the center of the room."
+        }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Book of Revelations",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book6.jpg" } }
+        },
+        "meta": {
+          "game_id": 78,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 6,
+          "quality": 3,
+          "item_pools": ["Library", "Angel Room", "Treasure Room"],
+          "description": "Gives +1 Soul Heart; can make the next boss a Harbinger; increases Devil / Angel room chance when held."
+        }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "The Book of Sin",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book7.jpg" } }
+        },
+        "meta": {
+          "game_id": 97,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 4,
+          "quality": 2,
+          "item_pools": ["Library", "Devil Room", "Treasure Room"],
+          "description": "Spawns a random heart, coin, bomb, key, battery, pill, card, or rune."
+        }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Monster Manual",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book8.jpg" } }
+        },
+        "meta": {
+          "game_id": 123,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 6,
+          "quality": 1,
+          "item_pools": ["Library", "Devil Room", "Treasure Room"],
+          "description": "When used, a random familiar will be spawned."
+        }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Telepathy For Dummies",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book9.jpg" } }
+        },
+        "meta": {
+          "game_id": 192,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 2,
+          "quality": 1,
+          "item_pools": ["Library", "Treasure Room"],
+          "description": "Gives homing tears and +3 range for the current room."
+        }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "How to Jump",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book10.jpg" } }
+        },
+        "meta": {
+          "game_id": 282,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 1,
+          "quality": 1,
+          "item_pools": ["Library", "Treasure Room"],
+          "description": "Isaac jumps in the direction he is currently moving."
+        }
+      }
+    },
+    {
+      "sys": { "id": "11" },
+      "fields": {
+        "title": "Book of Secrets",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book11.jpg" } }
+        },
+        "meta": {
+          "game_id": 287,
+          "type": "active",
+          "origin": "Rebirth",
+          "recharge_time_rooms": 6,
+          "quality": 1,
+          "item_pools": ["Library", "Secret Room", "Treasure Room"],
+          "description": "Randomly adds the effect of Treasure Map, The Compass, or Blue Map for the duration of the current floor."
+        }
+      }
+    },
+    {
+      "sys": { "id": "12" },
+      "fields": {
+        "title": "Satanic Bible",
+        "price": 30,
+        "image": {
+          "fields": { "file": { "url": "/images/book12.jpg" } }
+        },
+        "meta": {
+          "game_id": 292,
+          "type": "active",
+          "origin": "Repentance",
+          "recharge_time_rooms": 6,
+          "quality": 4,
+          "item_pools": ["Library", "Devil Room", "Treasure Room"],
+          "description": "Gives +1 Black Heart; makes the boss room drop a Devil Deal item instead of a normal item for that floor."
+        }
+      }
+    },
+    {
+      "sys": { "id": "13" },
+      "fields": {
+        "title": "Book of the Dead",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book13.jpg" } }
+        },
+        "meta": {
+          "game_id": 545,
+          "type": "active",
+          "origin": "Afterbirth+",
+          "recharge_time_rooms": 6,
+          "quality": 3,
+          "item_pools": ["Library", "Devil Room", "Treasure Room"],
+          "description": "Spawns bone familiars (orbitals or friendly monsters) based on number of enemies killed in the room."
+        }
+      }
+    },
+    {
+      "sys": { "id": "14" },
+      "fields": {
+        "title": "Book of Virtues",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book14.jpg" } }
+        },
+        "meta": {
+          "game_id": 583,
+          "type": "active/passive",
+          "origin": "Repentance",
+          "recharge_time_rooms": 4,
+          "quality": 3,
+          "item_pools": ["Library", "Angel Room"],
+          "description": "Spawns a wisp that orbits Isaac and fires small spectral tears alongside him."
+        }
+      }
+    },
+    {
+      "sys": { "id": "15" },
+      "fields": {
+        "title": "Lemegeton",
+        "price": 15,
+        "image": {
+          "fields": { "file": { "url": "/images/book15.jpg" } }
+        },
+        "meta": {
+          "game_id": 712,
+          "type": "active",
+          "origin": "Repentance",
+          "recharge_time_rooms": 6,
+          "quality": 3,
+          "item_pools": ["Library", "Devil Room"],
+          "description": "Grants a random passive item from the current room's item pool as an orbital familiar."
+        }
+      }
+    }
+  ]
+}
