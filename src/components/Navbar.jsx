@@ -7,7 +7,7 @@ export default function Navbar({ cartCount, onCartClick }) {
         <span className="nav-icon">
           <i className="fas fa-bars"></i>
         </span>
-        <img src="public/images/logo.jpg" alt="Logo" height="60" width="250" />
+        <img src="images/logo.jpg" alt="Logo" height="60" width="250" />
         <div className="cart-btn" onClick={onCartClick}>
           <span className="nav-icon">
             <i className="fas fa-shopping-cart"></i>
