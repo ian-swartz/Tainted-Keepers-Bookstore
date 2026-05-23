@@ -11,7 +11,7 @@
 
 body {
   /* background-color: #24272e; */
-  background: url("/images/sheol.jpg") center/cover no-repeat;
+  background: url("public/images/sheol.jpg") center/cover no-repeat;
   /* background: url("images/basement.jpg") center/cover no-repeat; */
   font-family: Asap, sans-serif;
   min-height: 100vh;
@@ -70,7 +70,7 @@ body {
 }
 
 .product {
-  background: url("/images/note.jpg") center/cover no-repeat;
+  background: url("public/images/note.jpg") center/cover no-repeat;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
