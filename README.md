@@ -39,7 +39,49 @@ Play the project here:
 
 ## Project Structure
 ```
-Structure goes here
+├── .github
+│   └── workflows
+│       └── deploy.yml
+├── public
+│   ├── images
+│   │   ├── screenshots
+│   │   │   ├── cart.png
+│   │   │   └── home.png
+│   │   ├── book1.jpg
+│   │   ├── book10.jpg
+│   │   ├── book11.jpg
+│   │   ├── book12.jpg
+│   │   ├── book13.jpg
+│   │   ├── book14.jpg
+│   │   ├── book15.jpg
+│   │   ├── book2.jpg
+│   │   ├── book3.jpg
+│   │   ├── book4.jpg
+│   │   ├── book5.jpg
+│   │   ├── book6.jpg
+│   │   ├── book7.jpg
+│   │   ├── book8.jpg
+│   │   ├── book9.jpg
+│   │   ├── logo.jpg
+│   │   ├── note.jpg
+│   │   └── sheol.jpg
+│   └── library_item_names.json
+├── src
+│   ├── components
+│   │   ├── Cart.jsx
+│   │   ├── CartItem.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ProductCard.jsx
+│   │   └── ProductsList.jsx
+│   ├── App.jsx
+│   ├── index.jsx
+│   └── styles.css
+├── index.html
+├── LICENSE
+├── package.json
+├── README.md
+├── README(project).txt
+└── vite.config.js
 ```
 
 ---
