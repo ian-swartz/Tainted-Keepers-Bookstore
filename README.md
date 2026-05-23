@@ -4,7 +4,7 @@ Single-page React app displaying a list of books from a JSON file.  Users can ad
 ## Live Demo
 
 Play the project here:  
-**PUT LINK HERE**
+**https://ian-swartz.github.io/Tainted-Keepers-Bookstore/**
 
 ---
 
@@ -54,9 +54,9 @@ GitHub: https://github.com/ian-swartz
 
 Project Created for Millersville CMSC 498 - Independent Study (Web/Game Development)
 
-Original CodeSandbox Share Link: ****
+Original CodeSandbox Share Link: **https://codesandbox.io/p/sandbox/friendly-hill-9kgxvn**
 
-CodeSandbox Website Link: ****
+CodeSandbox Website Link: **https://9kgxvn.csb.app/**
 
 (CodeSandbox doesn't always load all the images, which I believe may be a server issue).
 
